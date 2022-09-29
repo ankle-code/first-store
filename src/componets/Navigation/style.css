@@ -1,0 +1,14 @@
+.Navigation {
+    display: flex;
+    gap: 50px;
+}
+
+.Navigation span {
+    color: rgb(106, 106, 106);
+    cursor: pointer
+}
+
+.Navigation span:hover {
+    color: white;
+    font-weight: bold;
+}

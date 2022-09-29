@@ -1,0 +1,26 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "PC Gamer Concórdia Core i7-10700F, Geforce RTX3060 12GB, 16GB RAM, SSD 500GB, Branco",
+      "storage": true,
+      "price": 12222.21,
+      "discount": 10,
+      "remain_storage": 1,
+      "description": "Escolhemos um Gabinete Gamer com design bonito e arrojado que certamente trará mais evidência para o seu setup. O PC Gamer Concórdia vem equipado com um poderoso processador Intel Core i7 de 10° Geração que proporciona até 2,5 vezes mais desempenho. Cuidadosamente pensado para jogadores de alto nível, o PC Gamer Concórdia possui uma RTX 3060 de 12GB, desempenho além do limite para qualquer tarefa ou jogos mais recentes. Quando o assunto é velocidade seu SSD de 500GB com tecnologia NVme certamente dá conta do recado, armazene e acesse à todos os seus arquivos e programas em um piscar de olhos.",
+      "info": {
+        "assurance": 12,
+        "weight": 26101,
+        "color": "black"
+      },
+      "evaluates": [
+        {
+            "username": "Anônimo",
+            "description": "Veio tudo certinho como descrito, chegou rápido e muito bem embalado.",
+            "liked": true,
+            "rate": 5 
+        }
+      ]
+    }
+  ]
+}

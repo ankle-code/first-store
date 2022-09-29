@@ -1,0 +1,14 @@
+.Avatar {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.Avatar__border {
+    padding: 2.5px;
+    background-color: #141414;
+    border-radius: 50%;
+}

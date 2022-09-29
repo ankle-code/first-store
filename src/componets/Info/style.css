@@ -1,3 +1,14 @@
 .Info {
-    
+    display: flex;
+    height: 55px;
+    width: 330px;
+    justify-content: space-between;
+}
+
+.Info__money {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    color: white;
+    gap: 5px
 }

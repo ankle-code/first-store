@@ -1,5 +1,9 @@
 .Border {
-    padding: 10px;
-    border-radius: 5px;
-    background-color:  #141414;
+    padding: 12px 0px;
+    border-radius: 15px;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 55px;
 }

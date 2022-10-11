@@ -1,4 +1,7 @@
 .Header {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  height: 13vh;
+  align-items: center;
+  margin-bottom: 7vh;
 }

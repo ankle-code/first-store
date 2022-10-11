@@ -1,13 +1,16 @@
-import './style.css'
-import Info from '../Info'
-import Navigation from "../Navigation"
+import "./style.css";
+import Info from "../Info";
+import Navigation from "../Navigation";
 
 const Header = () => {
-    return (
+  return (
+    <div>
       <div className="Header">
         <Navigation />
         <Info />
-      </div>)
-}
+      </div>
+    </div>
+  );
+};
 
-export default Header
+export default Header;

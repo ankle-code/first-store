@@ -1,0 +1,25 @@
+.Card {
+  background-color: #f8f9fc;
+}
+
+.CardImage {
+  background-image: url(../../assets//images/cyberpunk-background.jpg);
+  background-size: cover;
+  width: 250px;
+  height: 130px;
+}
+
+.CardAbout {
+}
+
+.CardTitle {
+}
+
+.CardPrice {
+}
+
+.CardPriceText {
+}
+
+.CardPriceNumber {
+}

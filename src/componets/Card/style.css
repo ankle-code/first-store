@@ -1,5 +1,14 @@
 .Card {
   background-color: #f8f9fc;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 15px;
+  gap: 15px;
+  position: relative;
 }
 
 .CardImage {
@@ -7,19 +16,63 @@
   background-size: cover;
   width: 250px;
   height: 130px;
+  border-radius: 15px;
 }
 
-.CardAbout {
+.CardSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
 }
 
 .CardTitle {
-}
-
-.CardPrice {
+  font-size: 18px;
+  margin: 0;
 }
 
 .CardPriceText {
+  color: #7c7d7e;
 }
 
-.CardPriceNumber {
+.--bold {
+  font-weight: bold;
+}
+
+.CardRating {
+  display: flex;
+  gap: 10px;
+  border-radius: 15px;
+  padding: 10px 15px;
+  position: absolute;
+  border: 1px solid white;
+}
+
+.CardRatingIcon {
+  z-index: 2;
+}
+
+.CardRating span {
+  color: white;
+  z-index: 2;
+}
+
+.--blur {
+  width: 107px;
+  z-index: 1;
+  height: 54px;
+  background-color: #706a6a;
+  position: absolute;
+  left: -9px;
+  top: -8px;
+  filter: blur(15px);
+}
+
+.CardBagIcon {
+  position: absolute;
+  right: 10px;
+  top: 72px;
+  background-color: #f8f9fc;
+  padding: 5px;
+  border-radius: 13px;
 }

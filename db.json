@@ -1,19 +1,53 @@
 {
-  "posts": [
+  "products": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Cyberpunk 2077",
+      "price": 199.99,
+      "rating": 8.7,
+      "image": "https://playzuando.com.br/wp-content/uploads/2022/01/2c1e97ed-3ef5-4b15-928a-20a10a2197ba_2560x1440-5294ae9f2b864121a81e56518ccd3a42.jpg"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Fifa 2023",
+      "price": 263.9,
+      "rating": 8.6,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202207/0515/EH0uMn6RtH08f7bTHRDKTI5L.png"
+    },
+    {
+      "id": 3,
+      "name": "Spider-Man: Miles Morales",
+      "price": 219.91,
+      "rating": 9,
+      "image": "https://assets.reedpopcdn.com/digitalfoundry-2020-marvels-spider-man-miles-morales-tech-analysis-1604663057480.jpg/BROK/thumbnail/1600x900/quality/100/digitalfoundry-2020-marvels-spider-man-miles-morales-tech-analysis-1604663057480.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Forza Horizon 5",
+      "price": 309.0,
+      "rating": 9.4,
+      "image": "https://store-images.s-microsoft.com/image/apps.33953.13718773309227929.bebdcc0e-1ed5-4778-8732-f4ef65a2f445.9428b75f-2c08-4e70-9f95-281741b15341?q=90&w=480&h=270"
+    },
+    {
+      "id": 5,
+      "name": "God of War Ragnarök",
+      "price": 199.99,
+      "rating": 8.7,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202109/2821/a0DyIs2SEHrYpciM1ideU1wv.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Mortal Kombat 11",
+      "price": 402.64,
+      "rating": 9.4,
+      "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/games/switch/m/mortal-kombat-11-switch/hero"
+    },
+    {
+      "id": 7,
+      "name": "Gran Turismo 7",
+      "price": 237.41,
+      "rating": 10,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202109/1321/yZ7dpmjtHr1olhutHT57IFRh.png"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

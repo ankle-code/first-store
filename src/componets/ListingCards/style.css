@@ -1,2 +1,8 @@
 .ListingCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 0 auto;
+  width: 90%;
+  gap: 40px;
 }

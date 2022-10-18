@@ -1,6 +1,6 @@
 .Card {
   background-color: #f8f9fc;
-  max-width: 300px;
+  width: calc(33% - 23px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,10 +9,10 @@
   border-radius: 15px;
   gap: 15px;
   position: relative;
+  cursor: pointer;
 }
 
 .CardImage {
-  background-image: url(../../assets//images/cyberpunk-background.jpg);
   background-size: cover;
   width: 250px;
   height: 130px;

@@ -10,7 +10,7 @@ const Content = () => {
       <Routes>
         <Route path="/store" element={<Store />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/product" element={<ProductDetail />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
     </div>
   );

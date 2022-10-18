@@ -1,16 +1,20 @@
+import React, { useState, useEffect } from "react";
 import "./style.css";
 import ListingCards from "../../componets/ListingCards";
-import Card from "../../componets/Card";
+import axios from "axios";
 
 const Store = () => {
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3002/products")
+      .then((response) => setData(response.data));
+  }, []);
+
   return (
     <div>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <ListingCards data={data} />
     </div>
   );
 };

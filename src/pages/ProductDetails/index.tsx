@@ -8,6 +8,7 @@ type Product = {
   name: string;
   price: number;
   rating: number;
+  description: string;
 };
 
 const ProductDetail = () => {
@@ -39,8 +40,10 @@ const ProductDetail = () => {
         </div>
         <div className="ProductDetailAbout">
           <p className="ProductDetailPrice">R$ {product?.price.toFixed(2)}</p>
-          <p>orihigodorihgodihrgoh</p>
-          <button className="ProductDetailButton">Carrinho</button>
+          <p className="ProductDetailDescription">{product?.description}</p>
+          <div className="ProductDetailButtonContainer">
+            <button className="ProductDetailButton">Carrinho</button>
+          </div>
         </div>
       </div>
     </div>

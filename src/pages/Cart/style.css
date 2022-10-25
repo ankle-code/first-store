@@ -1,2 +1,9 @@
 .Cart {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.CartTitle {
+  font-size: 46px;
+  color: #f5393c;
 }

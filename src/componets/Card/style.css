@@ -76,3 +76,11 @@
   padding: 5px;
   border-radius: 13px;
 }
+
+.--backgroundRed {
+  background-color: #f5393c;
+}
+
+.--white {
+  color: white;
+}

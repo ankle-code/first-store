@@ -12,6 +12,7 @@ type ListingCardsProps = {
         image: string;
       }>
     | undefined;
+  cart?: boolean | undefined;
 };
 
 const ListingCards = (props: ListingCardsProps) => {
@@ -26,6 +27,7 @@ const ListingCards = (props: ListingCardsProps) => {
           price={item.price}
           rating={item.rating}
           image={item.image}
+          cart={props.cart}
         />
       ));
     }

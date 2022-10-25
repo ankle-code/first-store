@@ -5,49 +5,74 @@
       "name": "Cyberpunk 2077",
       "price": 199.99,
       "rating": 8.7,
-      "image": "https://playzuando.com.br/wp-content/uploads/2022/01/2c1e97ed-3ef5-4b15-928a-20a10a2197ba_2560x1440-5294ae9f2b864121a81e56518ccd3a42.jpg"
+      "image": "https://playzuando.com.br/wp-content/uploads/2022/01/2c1e97ed-3ef5-4b15-928a-20a10a2197ba_2560x1440-5294ae9f2b864121a81e56518ccd3a42.jpg",
+      "description": "O Cyberpunk 2077 é um RPG de aventura e ação de mundo aberto ambientado na megalópole de Night City, onde você joga como um mercenário cyberpunk envolvido em uma luta implacável pela sobrevivência."
     },
     {
       "id": 2,
       "name": "Fifa 2023",
       "price": 263.9,
       "rating": 8.6,
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202207/0515/EH0uMn6RtH08f7bTHRDKTI5L.png"
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202207/0515/EH0uMn6RtH08f7bTHRDKTI5L.png",
+      "description": "Entregando ainda mais ação e realismo do futebol aos campos do Maior Jogo do Mundo com avanços na tecnologia HyperMotion2, que agora tem o dobro de capturas de movimentos do mundo real, criando animações de futebol mais reais do que nunca."
     },
     {
       "id": 3,
       "name": "Spider-Man: Miles Morales",
       "price": 219.91,
       "rating": 9,
-      "image": "https://assets.reedpopcdn.com/digitalfoundry-2020-marvels-spider-man-miles-morales-tech-analysis-1604663057480.jpg/BROK/thumbnail/1600x900/quality/100/digitalfoundry-2020-marvels-spider-man-miles-morales-tech-analysis-1604663057480.jpg"
+      "image": "https://assets.reedpopcdn.com/digitalfoundry-2020-marvels-spider-man-miles-morales-tech-analysis-1604663057480.jpg/BROK/thumbnail/1600x900/quality/100/digitalfoundry-2020-marvels-spider-man-miles-morales-tech-analysis-1604663057480.jpg",
+      "description": "Na mais nova aventura do universo de Marvel's Spider-Man, o adolescente Miles Morales está se adaptando a um novo lar enquanto segue os passos de seu mentor, Peter Parker, como novo Spider-Man. Mas quando uma violenta disputa de forças ameaça destruir sua vizinhança, o aspirante a herói percebe que com grandes poderes também vêm grandes responsabilidades. Para salvar a Nova York da Marvel, Miles deve reconhecer e assumir o título de Spider-Man."
     },
     {
       "id": 4,
       "name": "Forza Horizon 5",
       "price": 309.0,
       "rating": 9.4,
-      "image": "https://store-images.s-microsoft.com/image/apps.33953.13718773309227929.bebdcc0e-1ed5-4778-8732-f4ef65a2f445.9428b75f-2c08-4e70-9f95-281741b15341?q=90&w=480&h=270"
+      "image": "https://store-images.s-microsoft.com/image/apps.33953.13718773309227929.bebdcc0e-1ed5-4778-8732-f4ef65a2f445.9428b75f-2c08-4e70-9f95-281741b15341?q=90&w=480&h=270",
+      "description": "Forza Horizon 5 é o mais novo game de corrida da Microsoft que chega exclusivamente para Xbox e PC. O jogo traz disputas em algumas das mais belas localidades do México e conta com centenas de carros, desafios e novos recursos de acessibilidade que prometem viabilizar a diversão para todos. O título desenvolvido pela Playground Games e publicado pelo Xbox Game Studios já está disponível."
     },
     {
       "id": 5,
       "name": "God of War Ragnarök",
       "price": 199.99,
       "rating": 8.7,
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202109/2821/a0DyIs2SEHrYpciM1ideU1wv.jpg"
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202109/2821/a0DyIs2SEHrYpciM1ideU1wv.jpg",
+      "description": "Derrote deuses e monstros nórdicos em combates fluidos e expressivos com armas de guerra. Embarque com Kratos e Atreus em uma jornada mítica em busca de respostas e aliados. Jornada Épica. Sequência Aclamada. 1 Jogador. Opções: PS5, PS4. Na trama, Kratos e Atreus precisam embarcar em uma nova aventura pelos Nove Reinos e se prepararem para a batalha profetizada que causará o fim do mundo, enquanto as forças de Asgard estão prontas para a guerra."
     },
     {
       "id": 6,
       "name": "Mortal Kombat 11",
       "price": 402.64,
       "rating": 9.4,
-      "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/games/switch/m/mortal-kombat-11-switch/hero"
+      "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/games/switch/m/mortal-kombat-11-switch/hero",
+      "description": "Mortal Kombat é uma das franquias de jogo de luta mais clássicos do mundo dos games. MK 11, que é sua mais recente edição, chegou em março de 2019 para PC (Windows) e os consoles PS4, Xbox One e Nintendo Switch. Desenvolvido pela NetherRealm Studios desde 2011, quando a Warner Bros adquiriu os direitos de imagem da série, o jogo em sua 11ª edição conta uma história que se passa dois anos após os eventos de Mortal Kombat X. O game é conhecido pela sua violência explícita e os clássicos 'Fatalities', que estão presentes em diferentes tipos e das formas mais sanguinárias possíveis. Confira todos os detalhes de Mortal Kombat 11 abaixo:"
     },
     {
       "id": 7,
       "name": "Gran Turismo 7",
       "price": 237.41,
       "rating": 10,
-      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202109/1321/yZ7dpmjtHr1olhutHT57IFRh.png"
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202109/1321/yZ7dpmjtHr1olhutHT57IFRh.png",
+      "description": "Seja você um piloto competitivo ou casual, colecionador, tuner, designer de visuais ou fotógrafo — encontre seu caminho com um número impressionante de modos de jogo, incluindo favoritos dos fãs como Campanha GT, Arcade e Escola de Pilotagem. Com a reintrodução do lendário Modo de Simulação GT, compre, modifique e pilote em uma campanha solo recompensadora enquanto desbloqueia novos carros e desafios. E, para quem curte duelar com outros pilotos, é possível aprimorar suas habilidades e competir no Modo GT Sport. Com mais de 420 carros disponíveis na Brand Central e a concessionária de carros usados desde o primeiro dia, Gran Turismo 7 recria o visual e a sensação de motores clássicos e supercarros de ponta com detalhes inigualáveis. Cada carro é controlado de forma diferente e oferece uma sensação única enquanto você percorre mais de 90 pistas em condições climáticas dinâmicas, incluindo pistas clássicas da história do GT. "
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Cyberpunk 2077",
+      "price": 199.99,
+      "rating": 8.7,
+      "image": "https://playzuando.com.br/wp-content/uploads/2022/01/2c1e97ed-3ef5-4b15-928a-20a10a2197ba_2560x1440-5294ae9f2b864121a81e56518ccd3a42.jpg",
+      "description": "O Cyberpunk 2077 é um RPG de aventura e ação de mundo aberto ambientado na megalópole de Night City, onde você joga como um mercenário cyberpunk envolvido em uma luta implacável pela sobrevivência."
+    },
+    {
+      "id": 2,
+      "name": "Fifa 2023",
+      "price": 263.9,
+      "rating": 8.6,
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202207/0515/EH0uMn6RtH08f7bTHRDKTI5L.png",
+      "description": "Entregando ainda mais ação e realismo do futebol aos campos do Maior Jogo do Mundo com avanços na tecnologia HyperMotion2, que agora tem o dobro de capturas de movimentos do mundo real, criando animações de futebol mais reais do que nunca."
     }
   ]
 }

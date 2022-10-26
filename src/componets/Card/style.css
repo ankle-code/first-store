@@ -84,3 +84,39 @@
 .--white {
   color: white;
 }
+
+.CardInputAmount {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.CardInputAmount input {
+  outline: none;
+  border: 0;
+  text-align: right;
+  padding: 5px 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-weight: bold;
+  max-width: 90px;
+}
+
+label {
+  color: red;
+  background-color: black;
+  padding: 5px 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  opacity: 0.5;
+  padding: 5px 12px;
+}
+
+.CardInputAmountIcon {
+  margin-top: -10px;
+}
+
+.CardInputDeleteIcon {
+  margin: 10px auto;
+  width: 20px;
+}

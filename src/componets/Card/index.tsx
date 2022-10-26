@@ -3,6 +3,11 @@ import dotMenuIcon from "../../assets/icons/dotmenu-icon.png";
 import Icon from "../Icon";
 import starIcon from "../../assets/icons/star-icon.png";
 import bagRedIcon from "../../assets/icons/bag-red-icon.png";
+import checkIcon from "../../assets/icons/check-icon.png";
+import trashIcon from "../../assets/icons/trash-icon.png";
+import plusIcon from "../../assets/icons/plus-icon.png";
+import lessIcon from "../../assets/icons/less-icon.png";
+import dotMenuBlackIcon from "../../assets/icons/dotmenu-black-icon.png";
 
 type CardProps = {
   id: number;
@@ -54,14 +59,29 @@ const Card = (props: CardProps) => {
       ></div>
       <div className="CardSection --white">
         <h1 className="CardTitle --bold">{props.name}</h1>
-        <Icon src={dotMenuIcon} />
+        <Icon src={dotMenuBlackIcon} />
       </div>
       <div className="CardSection">
         <span className="CardPriceText --white">Price</span>
         <span className="--bold">RS {props.price.toFixed(2)}</span>
       </div>
       <div className="CardBagIcon">
-        <Icon src={bagRedIcon} />
+        <Icon src={checkIcon} />
+      </div>
+      <div>
+        <label>Quantidade:</label>
+        <div className="CardInputAmount">
+          <div className="CardInputAmountIcon">
+            <Icon src={plusIcon} />
+          </div>
+          <input value="1" />
+          <div className="CardInputAmountIcon">
+            <Icon src={lessIcon} />
+          </div>
+        </div>
+        <div className="CardInputDeleteIcon">
+          <Icon src={trashIcon} />
+        </div>
       </div>
     </div>
   );

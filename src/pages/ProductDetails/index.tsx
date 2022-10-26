@@ -3,7 +3,7 @@ import axios from "axios";
 import "./style.css";
 
 type Product = {
-  id: number;
+  id?: number;
   image: string;
   name: string;
   price: number;
@@ -27,9 +27,13 @@ const ProductDetail = () => {
       });
   }, []);
 
-  console.log(getIdFromURL());
-
-  console.log(product);
+  const createCartProduct = () => {
+    console.log(product?.id);
+    delete product?.id;
+    axios
+      .post("http://localhost:3002/cart", product)
+      .then((response) => console.log(response.data, "POST"));
+  };
 
   return (
     <div className="ProductDetail">
@@ -42,7 +46,9 @@ const ProductDetail = () => {
           <p className="ProductDetailPrice">R$ {product?.price.toFixed(2)}</p>
           <p className="ProductDetailDescription">{product?.description}</p>
           <div className="ProductDetailButtonContainer">
-            <button className="ProductDetailButton">Carrinho</button>
+            <button className="ProductDetailButton" onClick={createCartProduct}>
+              Adicionar ao Carrinho
+            </button>
           </div>
         </div>
       </div>

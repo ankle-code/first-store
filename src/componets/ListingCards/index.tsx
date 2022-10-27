@@ -10,6 +10,7 @@ type ListingCardsProps = {
         price: number;
         rating: number;
         image: string;
+        amount: number;
       }>
     | undefined;
   cart?: boolean | undefined;
@@ -17,6 +18,8 @@ type ListingCardsProps = {
 
 const ListingCards = (props: ListingCardsProps) => {
   console.log(props.data);
+
+  console.log(props.data, "listing");
 
   const listCards = () => {
     if (props.data) {
@@ -27,6 +30,7 @@ const ListingCards = (props: ListingCardsProps) => {
           price={item.price}
           rating={item.rating}
           image={item.image}
+          amount={item.amount}
           cart={props.cart}
         />
       ));

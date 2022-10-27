@@ -9,15 +9,20 @@ type Product = {
   price: number;
   rating: number;
   description: string;
+  amount: number;
 };
 
 const ProductDetail = () => {
   const [product, setProduct] = useState<Product>();
+  const [cartProducts, setCartProducts] = useState<Product[]>();
 
   const getIdFromURL = () => {
     const pathname = window.location.pathname;
     return pathname.split("/")[2];
   };
+
+  console.log(cartProducts);
+  console.log(product);
 
   useEffect(() => {
     axios
@@ -25,14 +30,55 @@ const ProductDetail = () => {
       .then((response) => {
         setProduct(response.data);
       });
+
+    axios
+      .get("http://localhost:3002/cart")
+      .then((response) => setCartProducts(response.data));
   }, []);
+
+  const getProductInCart = () =>
+    cartProducts?.find((productInCart) => productInCart.name === product?.name);
+
+  const hasProductInCart = getProductInCart();
+
+  console.log(hasProductInCart, "getproductincart");
 
   const createCartProduct = () => {
     console.log(product?.id);
-    delete product?.id;
+    if (product) {
+      delete product?.id;
+      product.amount = 1;
+      axios
+        .post("http://localhost:3002/cart", product)
+        .then((response) => console.log(response.data, "POST"));
+    }
+  };
+
+  const updateCartProduct = (product: Product) => {
     axios
-      .post("http://localhost:3002/cart", product)
-      .then((response) => console.log(response.data, "POST"));
+      .put(`http://localhost:3002/cart/${hasProductInCart?.id}`, product)
+      .then((response) => console.log(response.data, "PUT"));
+  };
+
+  const getProductAmount = (product: Product) => {
+    let actualAmount = 0;
+    if (product?.amount) {
+      actualAmount = product?.amount;
+    }
+
+    return actualAmount + 1;
+  };
+
+  const handleAddProduct = () => {
+    if (hasProductInCart) {
+      console.log("adicionar mais 1");
+      const productAmount = getProductAmount(hasProductInCart);
+      hasProductInCart.amount = productAmount;
+      updateCartProduct(hasProductInCart);
+      return;
+    }
+
+    createCartProduct();
   };
 
   return (
@@ -46,7 +92,7 @@ const ProductDetail = () => {
           <p className="ProductDetailPrice">R$ {product?.price.toFixed(2)}</p>
           <p className="ProductDetailDescription">{product?.description}</p>
           <div className="ProductDetailButtonContainer">
-            <button className="ProductDetailButton" onClick={createCartProduct}>
+            <button className="ProductDetailButton" onClick={handleAddProduct}>
               Adicionar ao Carrinho
             </button>
           </div>

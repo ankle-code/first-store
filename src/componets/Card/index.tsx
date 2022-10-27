@@ -8,20 +8,62 @@ import trashIcon from "../../assets/icons/trash-icon.png";
 import plusIcon from "../../assets/icons/plus-icon.png";
 import lessIcon from "../../assets/icons/less-icon.png";
 import dotMenuBlackIcon from "../../assets/icons/dotmenu-black-icon.png";
+import axios from "axios";
 
 type CardProps = {
+  cart: boolean | undefined;
+} & Product;
+
+type Product = {
   id: number;
   name: string;
   price: number;
   rating: number;
   image: string;
-  cart: boolean | undefined;
+  amount: number;
 };
 
 const Card = (props: CardProps) => {
   const navigateTo = () => {
     console.log(props.id);
     window.location.href = `http://localhost:3000/product/${props.id}`;
+  };
+
+  const onDelete = () => {
+    console.log(props.id, "delete");
+
+    axios.delete(`http://localhost:3002/cart/${props.id}`);
+  };
+
+  console.log(props.amount, "amountCard");
+
+  const updateCartProdutAmount = (type: "more" | "less") => {
+    console.log(type, props.id);
+
+    let actualAmount = props.amount;
+
+    if (type === "more") {
+      actualAmount++;
+    }
+
+    if (type === "less" && actualAmount > 0) {
+      actualAmount--;
+    }
+
+    updateCartProduct({
+      id: props.id,
+      image: props.image,
+      rating: props.rating,
+      price: props.price,
+      name: props.name,
+      amount: actualAmount,
+    });
+  };
+
+  const updateCartProduct = (product: Product) => {
+    axios
+      .put(`http://localhost:3002/cart/${props.id}`, product)
+      .then((response) => console.log(response.data, "PUT"));
   };
 
   const renderStoreCard = (
@@ -71,15 +113,21 @@ const Card = (props: CardProps) => {
       <div>
         <label>Quantidade:</label>
         <div className="CardInputAmount">
-          <div className="CardInputAmountIcon">
+          <div
+            className="CardInputAmountIcon"
+            onClick={() => updateCartProdutAmount("more")}
+          >
             <Icon src={plusIcon} />
           </div>
-          <input value="1" />
-          <div className="CardInputAmountIcon">
+          <input value={props.amount} />
+          <div
+            className="CardInputAmountIcon"
+            onClick={() => updateCartProdutAmount("less")}
+          >
             <Icon src={lessIcon} />
           </div>
         </div>
-        <div className="CardInputDeleteIcon">
+        <div className="CardInputDeleteIcon" onClick={onDelete}>
           <Icon src={trashIcon} />
         </div>
       </div>
